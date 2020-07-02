@@ -1,0 +1,186 @@
+body
+{
+    margin: 0;
+    padding:0;
+    border:0;
+    outline:0;
+    background : #17202A;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+*{font-family: "Century Gothic";}
+a,input
+{
+  letter-spacing: 0.8px;
+  -webkit-transition-duration :0.3s;
+}
+p
+{
+  -webkit-transition-duration:0.3s;
+}
+.header
+{
+  width :100%;
+  height :100px;
+  margin-top : -35px;
+  background-color: white;
+}
+.header #main_head
+{
+  font-family: Arial;
+  color :black;
+  font-size : 35px;
+  padding-top: 25px;
+  margin-left : 620px;
+  width : 8%
+}
+#main_head:hover
+{
+  color :#DE2323 ;
+}
+.forgot-form
+{
+  border-style : solid;
+  border-color: white;
+  border-width: 0.5px;
+  text-align: center;
+  padding : 25px;
+  margin : 80px 0px 0px 410px;
+  width :500px;
+  background-color: transparent;
+}
+#forg_head,#ques
+{
+  font-family : Arial;
+  font-size: 25px;
+  color: white;
+  text-shadow: 0 0 2px black;
+}
+.forgot-form input
+{
+  padding : 8px;
+  margin : 3px;
+  border-color:transparent;
+}
+.forgot-form #forgbutt
+{
+  border: none;
+  background-color: #CB3E25;
+  padding :10px 13px 10px 13px;
+  margin-top : 20px;
+  color : white;
+  font-size: 17px;
+  border-radius: 4px;
+}
+.forgot-form #forgbutt:hover
+{
+  color : black;
+  background-color : #F7DC6F;
+}
+.forgot-form #changebutt
+{
+  border: none;
+  background-color: black;
+  padding :10px 13px 10px 13px;
+  margin-top : 20px;
+  color : white;
+  font-size: 17px;
+  border-radius: 4px;
+}
+.forgot-form #changebutt:hover
+{
+  background-color : #003C6A;
+}
+#msg
+{
+	margin : 20px 0px 0px 500px;
+	color : white;
+	font-family : Arial;
+	font-size : 30px;
+	-webkit-transition-duration : 0.5s;
+}
+
+#fogemail
+{
+	width:250px;
+}
+
+.container,.links,.container3
+{
+  border : solid;
+  border-width : 2px;
+  border-color:white;
+  width :70%;
+  height : 240%;
+  margin : 50px 0px 0px 200px;
+  color : white;
+  font-size : 20px;
+}
+.container
+{
+  height: 310%;
+}
+.container3
+{
+  height :425%;
+}
+.links
+{
+  text-align:center;
+  height : 18%;
+  margin : 100px 0px 0px 200px;
+}
+.links a
+{
+  text-align: center;
+  text-decoration: none;
+  color :white;
+}
+.links a:hover
+{
+  color : #DE2323;
+}
+.feed-form
+{
+  border:solid;
+  border-width: 0.5px;
+  border-color : white;
+  width :50%;
+  height : 50%;
+  margin : 100px 0px 0px 340px;
+  padding : 10px;
+}
+textarea
+{
+  width : 95%;
+  height : 50%;
+  margin-left: 15px;
+}
+.feed-form input
+{
+  border: none;
+  background-color: #CB3E25;
+  padding :10px 15px 10px 15px;
+  margin: 25px 0px 10px 300px ;
+  color : white;
+  font-size: 15px;
+  border-radius: 4px;
+}
+.feed-form input:hover
+{
+  color : black;
+  background-color : #D0D3D4;
+}
+#forgot input
+{
+  width :20%;
+}
+
+#thank
+{
+  margin-left : 50px;
+  margin-top:
+}
+*{font-family:  Open Sans;}

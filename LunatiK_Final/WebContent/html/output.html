@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel=stylesheet type=text/css href="../css/loginCss.css" />
+		<link rel=stylesheet type=text/css href="../css/outputCss.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+	</head>
+	<body onload="alterURL()">
+		<div class=header>
+			<a href="Home.jsp" title="Homepage"><p id=main_head>Lunati<span id=sp style="color:#DE2323;">k</span></p></a>
+		</div>
+		
+			<form name="last-form" class="radio-form" action="GetOutput.jsp" method="GET">
+			   <div class="container">
+				<div class="delta">
+					<h3><center>Delta</center></h3>
+					<input type="radio" id="r1" name="ch" value="401"/>
+				  <label for="r1">Relaxation</label>
+
+				  <input type="radio" id="r2" name="ch" value="402"/>
+				  <label for="r2">Vital Memory</label>
+
+				  <input type="radio" id="r3" name="ch" value="403"/>
+				  <label for="r3">Self Renewal</label>
+
+				  <input type="radio" id="r4" name="ch" value="404"/>
+				  <label for="r4">Deep Sleep</label>
+
+					<input type="radio" id="r5" name="ch" value="405"/>
+					<label for="r5">Pain Relief</label>
+				</div>
+				<div class="theta">
+					<h3><center>Theta</center></h3>
+					<input type="radio" id="r6" name="ch" value="501"/>
+				  <label for="r6">Meditation</label>
+
+				  <input type="radio" id="r7" name="ch" value="502"/>
+				  <label for="r7">Inner Guidance</label>
+
+				  <input type="radio" id="r8" name="ch" value="503"/>
+				  <label for="r8">Creativity</label>
+
+				  <input type="radio" id="r9" name="ch"  value="504"/>
+				  <label for="r9">Revitalization</label>
+
+					<input type="radio" id="r10" name="ch" value="505" />
+					<label for="r10">Emotional Healing</label>
+				</div>
+				<div class="beta">
+					<h3><center>Beta</center></h3>
+					<input type="radio" id="r11" name="ch" value="701"/>
+					<label for="r11">Euphoria</label>
+				  <input type="radio" id="r12" name="ch" value="702"/>
+				  <label for="r12">Oxygen Boost</label>
+
+				  <input type="radio" id="r13" name="ch" value="703"/>
+			  	<label for="r13">Concentration</label>
+				</div>
+				<div class="alpha">
+					<h3><center>Alpha</center></h3>
+					<input type="radio" id="r14" name="ch" value="601"/>
+					<label for="r14">Super Learning</label>
+
+					<input type="radio" id="r15" name="ch" value="602"/>
+					<label for="r15">Mood Elevation</label>
+
+					<input type="radio" id="r16" name="ch" value="603"/>
+					<label for="r16">Increased Focus</label>
+				</div>
+		</div>
+		<div class="volume" title="keep the computer's volume around 30%">
+			<!-- <input id="vol" class="slider" type="range" min="1" max="6" value="3"  /> --> 
+		</div><br>
+		<div class="buttons">
+			<select name="ch2">
+				<option value="2">2 minutes</option>
+				<option value="5">5 minutes</option>
+				<option value="10">10 minutes</option>
+			</select>
+			<button class="sub1" type="submit" onclick="return isPlaying()" name="play" value="on">Play <span>&#x25B6;</span></button>
+			<button class="sub2" type="submit" name="stop" >Stop <span>&#x25FC;</span></button>
+		</div>
+		<div id="disp" />
+	</form>
+	</strong>
+	<script type="text/javascript">
+		var yes = false;
+		function ask()
+		{
+			return 'Do you want to Leave??';
+		}
+		function isPlaying()
+		{
+			if(yes)
+			{
+				alert("Please Stop The Audio beforehand!!");
+				return false;
+			}
+			return true;
+		}
+	</script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $('#vol').change(function ()
+            {
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:8080/LunatiK_Final/jsp/GetOutput.jsp",
+                    data: "vol=" +$('#vol').val(),
+                    success: function()
+                    {
+                    }
+                });
+            });
+
+        });
+
+    </script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+    		$(window).unload(function(){
+        		let yes = confirm("Leaving??");
+        		if(yes)
+        			return true
+        		else
+        			return false;
+    		});
+		});
+	</script>-->
+	</body>
+</html>

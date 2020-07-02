@@ -1,0 +1,171 @@
+body
+{
+    margin: 0;
+    padding:0;
+    border:0;
+    outline:0;
+    background : #17202A;
+    /*background : #F18F5B;*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+a,button,input
+{
+  letter-spacing: 2px;
+  text-decoration: none;
+  -webkit-transition-duration :0.3s;
+}
+p
+{
+  -webkit-transition-duration:0.3s;
+}
+.header
+{
+  width :100%;
+  height :100px;
+  margin-top : -35px;
+  background-color: white;
+}
+.header #main_head
+{
+  font-family: Arial;
+  color :black;
+  width : 120px;
+  height : 30px;
+  font-size : 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left : 30px;
+}
+#main_head:hover
+{
+  color :#DE2323 ;
+}
+.login-form
+{
+  float :right;
+  margin : -90px 45px 10px 0px;
+  width :530px;
+  height : 5%;
+ }
+.login-form input
+{
+  padding : 6px;
+  margin : 2px 3px 3px 10px;
+  border-color:none;
+}
+.login-form #logbutt
+{
+  float : right;
+  border: none;
+  background-color: #CB3E25;
+  padding :7px 13px 7px 13px;
+  margin: -37px 0px 10px 55px ;
+  color : white;
+  font-size: 15px;
+  border-radius: 4px;
+}
+.links
+{
+  margin-top : -40px;
+  margin-right:-20px;
+  height : 2%;
+ }
+#sign-up,#forgot
+{
+  float : right;
+  color : black;
+  text-decoration: none;
+  font-size : 18px;
+  font-family: Arial;
+  margin : 10px 10px 5px 0px;
+  padding-right : 13px;
+
+}
+#sign-up
+{
+	margin-right : 70px;
+}
+.login-form #logbutt:hover
+{
+  color : white;
+  background-color : #1C2833;
+}
+#sign-up:hover
+{
+  color : #DE2323;
+}
+#forgot:hover
+{
+  color : #DE2323;
+}
+/*h2
+{
+  font-style: none;
+  font-size: 50px;
+  color :white;
+  font-family: ;
+  text-shadow : 0 0 10px black;
+  letter-spacing : 40px;
+  margin-left :30px;
+}*/
+*{font-family: "Century Gothic";}
+.container
+{
+  color :white;
+  width : 70%;
+  height :120%;
+  margin : 100px 0px 0px 190px;
+  font-size: 20px;
+  border : solid;
+  border-width: 2px;
+  border-color: white;
+  padding: 10px;
+}
+.image
+{
+  width : 70%;
+  height : 60%;
+  margin : 50px 0px 0px 215px;
+}
+.image img
+{
+  margin-left : 140px;
+  height :50%;
+}
+*{font-family: "Tahoma";}
+
+.below-header
+{
+  color :white;
+  background-color:#CB3E25 ;
+  font-size : 50px;
+  margin-top : -60px;
+  padding-left : -20px;
+  width : 100%;
+  height :150px;
+  -webkit-animation-name  : anime;
+  -webkit-animation-duration : 5s;
+
+}
+@keyframes anime {
+    from
+    {
+      color : #CB3E25;
+      background-color: white;
+    }
+    to
+    {
+      color :white;
+      background-color:#CB3E25 ;
+    }
+
+}
+.below-header h2
+{
+  letter-spacing: 20px;
+  margin-top : 90px;
+  padding-top: 15px;
+}

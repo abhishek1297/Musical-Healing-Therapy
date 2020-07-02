@@ -1,0 +1,278 @@
+
+*{font-family: Open Sans;}
+a,p
+{
+  letter-spacing: 0.8px;
+  -webkit-transition-duration :0.3s;
+}
+a:hover
+{
+  border-width: 2px;
+}
+body
+{
+    margin: 0;
+    padding:0;
+    margin-right: -80px;
+    border:0;
+    outline:0;
+    /*background-image: url("med1.jpg")  ;*/
+    background : #17202A;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header
+{
+  width :100%;
+  height :100px;
+  margin-top : -35px;
+  background-color: white;
+}
+.header #main_head
+{
+  font-family: Arial;
+  color :black;
+  font-size : 35px;
+  padding-top: 25px;
+  margin-left : 30px;
+  width : 300px;
+}
+#main_head:hover
+{
+  color :#DE2323 ;
+}
+
+.header .links #a1,#a2,#a3
+{
+  color :black;
+  text-decoration: none;
+  font-size: 18px;
+  font-family : Arial;
+}
+.links
+{
+  margin: -30px -70px 0px 20px;
+  width : 450px;
+  height:30px;
+  float : right;
+}
+.links a
+{
+  margin:5px;
+  margin-left:10px;
+}
+.links #a1:hover
+{
+  color :#DE2323;
+}
+.links #a2:hover
+{
+  color :#DE2323;
+}
+.container
+{
+  padding: 1px;
+  width:90%;
+  height : 90%;
+  margin-top:30px;
+  margin-left: 2px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+}
+
+.below-header
+{
+  height : 10%;
+  width: 97.3%;
+  text-align: center;
+  font-size: 50px;
+  margin-top : 0px;
+  color : white;
+  background-color:#CB3E25;
+  padding : 20px;
+}
+.grid
+{
+  width : 1010px;
+  height : 600px;
+  margin-top : 30px;
+  margin-left : 200px;
+  display:grid;
+  grid-template-columns: 400px 600px;
+  grid-template-rows : 30% 40% 20%;
+  grid-template-areas:
+  "know session"
+  "QnA QnA"
+  "queries feedback"
+  ;
+  grid-gap : 10px;
+
+}
+/*
+.grid a:nth-child(odd)
+{
+  background:lightblue;
+}
+.grid a:nth-child(even)
+{
+  background:pink;
+}
+*/
+.grid a
+{
+  border-radius: 0px;
+  border:solid;
+  border-width: 0.5px;
+  border-color:white;
+  font-size: 20px;
+  text-align: center;
+  background-color: ;
+}
+.grid p
+{
+  color : white;
+}
+.know
+{
+  grid-area : know;
+  text-decoration: none;
+}
+.know p
+{
+  text-align: left;
+  font-size:40px;
+  font-weight: bolder;
+  margin-top : 0px;
+  padding-left: 20px;
+  padding-top: 23px;
+  height : 147px;
+  padding-bottom :10px;
+}
+.session
+{
+  grid-area : session;
+  text-decoration: none;
+}
+.session p
+{
+  text-align: center;
+  font-size:40px;
+  font-weight: bolder;
+  margin-top : 10px;
+  padding-left: 10px;
+  padding-top: 50px;
+  height : 140px;
+  width  : 98%;
+  padding-bottom :10px;
+}
+
+.QnA
+{
+  text-align: center;
+  grid-area : QnA;
+  text-decoration: none;
+}
+
+.QnA p
+{
+  text-align: center;
+  font-size:50px;
+  font-weight: bolder;
+  margin-top : 0px;
+  padding-left: 10px;
+  padding-top: 80px;
+  height : 160px;
+  padding-bottom :10px;
+}
+
+.queries
+{
+  grid-area : queries;
+  text-decoration: none;
+}
+.queries p
+{
+  text-align: left;
+  font-size:40px;
+  font-weight: bolder;
+  margin-top : 0px;
+  padding-left: 20px;
+  padding-top: 20px;
+  height : 100px;
+  padding-bottom :10px;
+}
+.feedback
+{
+  grid-area : feedback;
+  text-decoration: none;
+}
+.feedback p
+{
+  text-align: left;
+  font-size:40px;
+  font-weight: bolder;
+  margin-top : 0px;
+  padding-left: 40px;
+  padding-top: 30px;
+  height : 60px;
+  margin-left : 0px;
+  padding-bottom :20px;
+}
+.grid a:hover
+{
+  border-style:none;
+  border-color: ;
+  /*background-color : white;*/
+
+}
+.grid .QnA:hover
+{
+  background:#F7DC6F;
+}
+.grid .QnA p:hover
+{
+  font-size : 55px;
+}
+.grid .session:hover
+{
+  background:#D35400;
+}
+.grid .queries:hover
+{
+  background:#D0D3D4;
+}
+.grid p:hover
+{
+  color : #002E4B;
+  font-size: 45px;
+}
+.grid .know p:hover
+{
+  background-color : #82E0AA;
+}
+.grid .feedback:hover
+{
+  background:#5499C7;
+  /*border-color:white;*/
+}
+.below-header
+{
+  -webkit-animation-name  : anime;
+  -webkit-animation-duration : 5s;
+
+}
+@keyframes anime {
+    from
+    {
+      color : #CB3E25;
+      background-color: white;
+    }
+    to
+    {
+      color :white;
+      background-color:#CB3E25 ;
+    }
+
+}

@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<html>
+	<head>
+		<link rel=stylesheet type=text/css href="../css/homeCss.css">
+	</head>
+	<body>
+		<div class=header>
+			<a href="Home.jsp" style="text-decoration : none;" title="Homepage"><p id=main_head>Lunati<span id=s1 style="color:#DE2323;">k</span></p></a>
+			<div class=links>
+			<a id=a2 href = ChangePass.jsp> Change Password</a> |
+			<a id=a1 href = Login.jsp> Logout</a>
+		</div>
+		</div>
+  	<div class=below-header>Welcome,<%= session.getAttribute("username") %></div>
+	<!--<div class=container>
+			<div class=right-container>
+				states<br>
+			</div>
+
+		 	<div class=left-container>
+				some user info
+			</div>-->
+			<div class=grid>
+				<a class="session" href="" title="Last Activity"><p>Your Last Session</p></a>
+				<a target="_blank" class="know" href="../html/wanna_know.html" title="Information"><p >Wanna Know..<br>How it Works?</p></a>
+				<a class="QnA"href="GetOutput.jsp" title="Listen"><p>Let's Get Started</p></a>
+				<a class="feedback"href="Feedback.jsp" title="Feedback"><p >Feedback Please!</p></a>
+				<a target="_blank" class="queries"href="../html/queries.html" title="Questions"><p >Any Questions?</p></a>
+			</div>
+		</body>
+</html>

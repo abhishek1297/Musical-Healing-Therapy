@@ -1,0 +1,325 @@
+.header #main_head
+{
+  margin-left : 620px;
+}
+.container
+{
+  letter-spacing: 0.8px;
+  width : 75%;
+  height : 350px;
+  margin-left: 150px;
+  margin-top : 20px;
+  padding : 15px;
+  border :none;
+}
+
+.alpha,.beta,.theta,.delta
+{
+  letter-spacing: 1px;
+  width : 220px;
+  height : 300px;
+  color :white;
+  font-size: 20px;
+  border : solid;
+  border-width: 0.5px;
+  border-color: white;
+  padding: 10px;
+}
+.buttons
+{
+  letter-spacing: 0.8px;
+  width : 75%;
+  height : 100px;
+  margin-left: 215px;
+  margin-top : 20px;
+  padding : 5px;
+  border : none;
+}
+.delta,.theta
+{
+  float : left;
+}
+.alpha,.beta
+{
+  float :right;
+}
+.theta
+{
+  margin-left : 10px;
+}
+.alpha
+{
+  margin-right : 10px;
+}
+li
+{
+  margin : 5px;
+  margin-left: -20px;
+  padding : 3px;
+}
+
+.container input[type=radio]
+{
+  display :none;
+}
+.container p
+{
+  font-size : 30px;
+}
+
+h3
+{
+  letter-spacing: 1px;
+  margin-top : 10px;
+  color :white;
+}
+/*****
+ *
+ * Radio checked style related
+ * the fun part starts here
+ *
+ */
+input[type=radio] {
+  display: none;
+}
+
+/**
+ * How it should look when hovered
+ */
+.active-label, label:focus, label:hover, label:active, input:checked + label {
+  c75% white;
+  text-decoration: underline;
+  font-size : 15px;
+}
+.active-label:before, label:focus:before, label:hover:before, label:active:before, input:checked + label:before {
+  background: #7FB3D5;
+  border-color: #002E4B;
+}
+.container label:hover
+{
+  color :#002E4B;
+}
+/*
+ * Make those labels sexy
+ */
+label {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1;
+  cursor: pointer;
+  display: block;
+  padding: 1rem 1rem 1rem 3rem;
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background: transparent;
+  whitespace: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  height : 10px;
+  /**
+   * This is the radio fake dot basically
+   */
+}
+.buttons label
+{
+  padding : -5px;
+  font-size: 25px;
+  color :white;
+  font-weight: bold;
+  line-height: 1;
+  cursor: pointer;
+  padding: 1rem 1rem 1rem 3rem;
+  position: relative;
+  background: transparent;
+  whitespace: no-wrap;
+  overflow: hidden;
+  width : 33%;
+  text-overflow: ellipsis;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  height : 7px;
+  margin-left : 160px;
+  margin-top : -2px;
+
+}
+.buttons h3
+{
+  padding-bottom : -10px;
+}
+
+label:first-of-type {
+  border: 0;
+}
+label:before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: .2rem solid white;
+}
+
+/**
+ * How it should look when checked
+ */
+input:checked + label:before
+{
+  border-color: #7FB3D5;
+  border: solid #000;
+  background: #7FB3D5;
+}
+
+/**
+ * How it should look when disabled
+ */
+input:disabled + label
+{
+  background: #efefef;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: not-allowed;
+}
+input:disabled + label:hover
+{
+  border-color: rgba(0, 0, 0, 0.1);
+}
+input:disabled + label:before
+ {
+  border-color: white;
+  background: white;
+}
+.container div:hover
+{
+  color: #002E4B;/*
+  border-style:solid;
+  border-color: #002E4B;*/
+  border : none;
+  font-size : 25px;
+  -webkit-transition-duration : 0.3s;
+}
+.container .delta:hover
+{
+  background-color : #F7DC6F;
+}
+.container .theta:hover
+{
+  background-color :#D35400;
+}
+.container .alpha:hover
+{
+  background-color : #82E0AA;
+}
+.container .beta:hover
+{
+    background-color : #D0D3D4;
+}
+.buttons select
+{
+  margin-left : 50px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  width : 180px;
+  height : 50px;
+  margin-top : 10px;
+  -webkit-transition-duration : 0.3s;
+  background : white;
+  color : #CB3E25;
+  border-radius: 3px;
+}
+.buttons option
+{
+
+  font-size: 20px;
+  border-radius: 3px;
+}
+
+
+.buttons select:hover
+{
+  background : #CB3E25;
+  color : white;
+}
+/*.buttons label
+{
+  font-size : 12px;
+  letter-spacing: 2px;
+}*/
+.sub1,.sub2
+{
+  width : 250px;
+  height : 50px;
+  border-radius: 4px;
+  border :none;
+  border : none;
+  padding 10px 15px 10px 15px;
+  background : #CB3E25;
+  color : white;
+  font-size: 20px;
+  margin-left : 50px;
+}
+.sub2:hover
+{
+  background:white;
+  color : #CB3E25;
+}
+.sub1:hover
+{
+  background:white;
+  color : #CB3E25;
+}
+
+.volume
+{
+  margin-top: -120px;
+  background : transparent;
+  width : 71%;
+  height : 100px;
+  margin-left : 170px;
+  margin-bottom : 30px;
+
+}
+.volume input
+{
+  margin : 50px 0px 20px 5px;
+  width : 1000px;
+
+}
+.slider
+ {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    background: white;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 10px;
+}
+.slider:hover
+{
+    opacity: 1.5;
+}
+
+.slider::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 80%;
+    background:  #CB3E25;
+    cursor: pointer;
+}
+.slider::-moz-range-thumb
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}

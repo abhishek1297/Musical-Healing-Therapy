@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel=stylesheet type=text/css href="../css/loginCss.css">
+	</head>
+	<body onload="cancelForward()">
+		<div class=header>
+			<a href="Login.jsp" title="Loginpage"><p id=main_head>Lunati<span id=s1 style="color:#DE2323;">k</span></p></a>
+			<div class=login-form>
+				<form name="login" action="Login.jsp" onsubmit="return loginValidateForm()" method="post">
+					<input type="text" name="email" placeholder="Email"/>
+					<input type="password" name="pass" placeholder="Password"/>
+					<input id=logbutt type=submit name="loginclick" value ="Submit">
+					<!-- <input id="hid" type="hidden" name="foremail" value=""> -->
+				</form>
+			</div>
+			<div class="links">
+			<a id="sign-up" href="Signup.jsp">Sign Up</a> 
+			<a id="forgot" href="Forgot1.jsp" >Forgot Password</a>
+			</div>
+
+	</div>
+	<div class="below-header">
+	<h2><center>Binaural Beats</center></h2>
+	</div>
+	<!-- <div class=image><img src="../css/waves.jpg"></img></div> -->
+	<div class=container>
+		<p><strong>Important: To get the full benefit from audio with binaural beats you have to use headphones.</strong></p>
+	<p>Binaural beats were originally discovered in 1839 by physicist Heinrich Wilhelm Dove.
+	He discovered when signals of two different frequencies are presented separately, one to each ear, our brain detects the phase variation between the frequencies.
+	The difference between these two signals is called a binaural beat. For example, if a frequency of 100 Hz is presented to your left ear, and a frequency of 108 Hz is presented to your right ear
+	 your brain hears a third frequency pulsing at 8 Hz, which is the exact difference between the two frequencies.
+	</p>
+	<p>Binaural beats will work on balancing our brain hemispheres as well as balancing our nervous system and energy system.
+	When the two hemispheres of our brain are synchronized with each other unlocked and unused potential and resources in our subconscious mind (connected to the right hemisphere) becomes awakened in this synchronization.
+	All brain cell dendrites then operates with the maximum information flow possible between both hemispheres. Scientists call this whole brain synchronization and when achieved, your brain experiences extremely beneficial changes in hemispheric blood flow and chemistry and you can effortlessly achieve powerful states of focused concentration,
+	deep relaxation and more, all while stimulating parts of your brain to work together in synchronization.
+	</p>
+	<p>Health professionals such as psychologists, medical doctors, and hypnotherapists, are integrating binaural tones and other brain wave entrainment processes into their patients treatment.</p>
+	<p>Training your brainwaves can be a highly effective method for personal and spiritual growth. Different brainwave states will produce different results for you. Binaural beats effectively entrain and synchronise your brainwaves to enhance any specific brainwave pattern. This allows you to rapidly enter states of relaxation, focus, high-energy, or meditation whenever you want. According to neuroscientists, the effect of decreasing the brain rhythm from beta to alpha via deep relaxation techniques or the use of binaural beats brain entrainment, changes the levels of certain beneficial brain chemicals.</p>
+	</div>
+		<script src="../js/Warnings.js"></script>
+		<script>
+		let email,flag;
+		function askEmail(str)
+		{
+			let reg = new RegExp("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$");
+			email = prompt(str,"");
+			if((reg.test(email)) && email !== undefined)
+			{
+				flag = true;
+				document.getElementById("hid").value = email;
+				window.location.reload();
+			}
+			else
+			{
+					alert("Invalid E-mail Format!!");
+					window.location.reload();
+			}
+		}
+		</script>
+	</body>
+</html>
